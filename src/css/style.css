@@ -1,0 +1,132 @@
+.countries{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+body{
+    background: url(../images/4k.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment:fixed ;
+    background-size: 100%;
+}
+.button{
+    transform: scale(1);
+    width: 90px;
+    height: 45px;
+    color: white;
+    background-color: brown;
+    transition: 0.3s;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.pop{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.pop form{
+    display: flex;
+    gap: 10px   ;
+    flex-direction: row;
+}
+.pop form div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.countryflag{
+    width: 300px;
+    height: 200px;
+
+}
+.country{
+    margin: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 300px;
+}
+.country p{
+    margin: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.officialname{
+    text-align: center;
+    font-size: 20px;
+}
+.fa-circle-info{
+    font-size: 30px
+}
+.search{
+    font-size: 20px;
+    border: none;
+    outline: 0;
+    border: 2px solid brown;
+    border-radius: 20px;
+    padding: 5px;
+    color: brown;
+    margin-left: 20px;
+    background-color: rgb(255, 255, 255,0.5);
+    
+}
+.pop form div div{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pop form div div label{
+    cursor: pointer;
+}
+.filter{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    gap: 5px   ;
+}
+.filtermain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.id{
+    display: none;
+}
+.nameexp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.fa-circle-info{
+    cursor: pointer;
+    
+}

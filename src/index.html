@@ -5,35 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Country App</title>
-   <link rel="stylesheet" href="./style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-div">
-        <p class="navbar-p">Country App</p>
+    <div class="filtermain">
+      <div class="searchbar">
+        <input
+         
+          class="search"
+          type="text"
+          placeholder="Turkey"
+        />
       </div>
-    </nav>
-    <div class="searchbar">
-      <input onkeyup="apidatagenerator()" class="search" type="text" placeholder="search" />
-    </div>
-    <section class="filter">
-      <div class="pop">
-        <button class="button">ascending</button>
-        <button class="button">descending</button>
-      </div>
-      <div class="cont">
-        <button class="button">Asia</button>
-        <button class="button">Europe</button>
-        <button class="button">Afrika</button>
-        <button class="button">Australia</button>
-        <button class="button">Americas</button>
-       
-      </div>
-    </section>
-    <section class="countries">
-    
-    </section>
-    <script src="./index.js"></script>
-  </body>
+      <section class="filter">
+        <div class="pop">
+          <form action="">
+            <div>
+              <div>
+                <input
+                  type="radio"
+                  id="ascending"
+                  class="radios"
+                  name="filterpop"
+                />
+                <label>Population <i class="fa-solid fa-arrow-down"></i></label>
+              </div>
+              <br />
+              <div>
+                <input
+                  type="radio"
+                  id="descending"
+                  class="radios"
+                  name="filterpop"
+                />
+                <label>Population <i class="fa-solid fa-arrow-up"></i></label>
+              </div>
+          
+            </div>
+            <div>
+              <div>
+                <input
+                  type="radio"
+                  id="areadown"
+                  class="radios"
+                  name="filterpop"
+                />
+                <label>Area <i class="fa-solid fa-arrow-down"></i></label>
+              </div>
+              <br />
+              <div>
+                <input
+                  type="radio"
+                  id="areaup"
+                  class="radios"
+                  name="filterpop"
+                />
+                <label>Area <i class="fa-solid fa-arrow-up"></i></label>
+              </div>
 
+            
+            </div>
+          </form>
+        </div>
+        <div class="cont">
+          <button class="button">Asia</button>
+          <button class="button">Europe</button>
+          <button class="button">Africa</button>
+          <button class="button">Oceania</button>
+          <button class="button">Americas</button>
+          <button class="button">Antarctic</button>
+          <button class="button">All</button>
+        </div>
+      </section>
+    </div>
+    <section class="countries">
+      
+    </section>
+
+  </body>
 </html>
