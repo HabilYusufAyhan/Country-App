@@ -14,7 +14,7 @@ async function apidatagenerator() {
        
         const fetchapi = await fetch(api);
         const dataapi = await fetchapi.json();
-      console.log(dataapi);
+    
    
       countriessec.innerHTML = '';
       for (let i = 0; i < dataapi.length; i++) {

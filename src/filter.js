@@ -1,7 +1,7 @@
 async function as_descending(a) {
   const countriessec = document.querySelector(".countries");
   const api = "https://restcountries.com/v3.1/all";
-  console.log(a);
+
   if (a == 0) {
     const fetchapi = await fetch(api);
     const dataapi = await fetchapi.json();
@@ -21,7 +21,7 @@ async function as_descending(a) {
     }
     countriessec.innerHTML = "";
     for (let x = 0; x < sorteddataapi.length; x++) {
-      console.log(sorteddataapi[x][0]);
+   
       const countrycreate = document.createElement("div");
       countrycreate.classList.add("country");
       countrycreate.innerHTML = `
@@ -64,7 +64,7 @@ async function as_descending(a) {
     }
     countriessec.innerHTML = "";
     for (let x = 0; x < sorteddataapi.length; x++) {
-      console.log(sorteddataapi[x][0]);
+    
       const countrycreate = document.createElement("div");
       countrycreate.classList.add("country");
       countrycreate.innerHTML = `
@@ -112,7 +112,7 @@ async function area(a) {
 
     countriessec.innerHTML = "";
     for (let x = 0; x < sorteddataapi.length; x++) {
-      console.log(sorteddataapi[x][0]);
+      
       const countrycreate = document.createElement("div");
       countrycreate.classList.add("country");
       countrycreate.innerHTML = `
@@ -153,7 +153,7 @@ async function area(a) {
     }
     countriessec.innerHTML = "";
     for (let x = 0; x < sorteddataapi.length; x++) {
-      console.log(sorteddataapi[x][0]);
+     
       const countrycreate = document.createElement("div");
       countrycreate.classList.add("country");
       countrycreate.innerHTML = `
@@ -187,7 +187,7 @@ async function regions(a) {
   const dataapi = await fetchapi.json();
   dataapi[9].area = 377; //api error fix
   var regiontext = a.textContent;
-  console.log(regiontext);
+
   for (let index = 0; index < dataapi.length; index++) {
     if (regiontext == "All") {
       const countrycreate = document.createElement("div");
