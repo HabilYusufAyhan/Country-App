@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".search"),document.querySelector(".countries")})();
